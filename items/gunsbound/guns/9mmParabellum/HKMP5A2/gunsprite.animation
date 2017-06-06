@@ -1,0 +1,249 @@
+{
+	"globalTagDefaults" : {
+		"gunmodel" : "HKMP5A2",
+		"bullettype" : "9mmParabellum",
+		
+		"armbackframe" : "rotation",
+		"armbackdirectives" : "",
+		"armbackarmor" : "",
+		
+		"armfrontframe" : "rotation",
+		"armfrontdirectives" : "",
+		"armfrontarmor" : "",
+		
+		"species" : "human"
+	},
+	"animatedParts" : {
+		"stateTypes" : {
+			"firing" : {
+				"default" : "off",
+				"states" : {
+					"fire" : {
+						"frames" : 3,
+						"cycle" : 0.032,
+						"mode" : "transition",
+						"transition" : "off",
+						"properties" : {"lightsOn" : ["muzzleFlash"]}
+					},
+					"off" : {
+						"properties" : {"lightsOff" : ["muzzleFlash"]}
+					}
+				}
+			}
+		},
+	
+		"parts" : {
+			
+			"muzzle" : {
+				"properties" : {
+					"zLevel" : 16,
+					"transformationGroups" : ["muzzle", "gun", "offset"],
+					"offset" : [1, -0.375],
+					"fullbright" : true,
+					"centered" : false
+				},
+				"partStates" : {
+					"firing" : {
+						"fire" : {
+							"properties" : {
+								"image" : "/animations/muzzleflash/bulletmuzzle3/bulletmuzzle3.png:<frame>"
+							}
+						},
+						"off" : {
+						}
+					}
+				}
+			},
+			
+			"gun" : {
+				"properties" : {
+					"zLevel" : 6,
+					"centered" : false,
+					"offset" : [0, 0],
+					"transformationGroups" : ["gun", "offset"],
+					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/gun.png"
+				}
+			},
+			
+			"gunbg" : {
+				"properties" : {
+					"zLevel" : 2,
+					"centered" : false,
+					"offset" : [0, 0],
+					"transformationGroups" : ["gunbg", "gun", "offset"],
+					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/gunbg.png"
+				}
+			},
+			
+			"armback" : {
+				"properties" : {
+					"zLevel" : 0,
+					"centered" : false,
+					"offset" : [-3.75, -2.375],
+					"transformationGroups" : ["armback", "offset"],
+					"image" : "/humanoid/<species>/backarm.png:<armbackframe><armbackdirectives>"
+				}
+			},
+			
+			"armbackarmor" : {
+				"properties" : {
+					"zLevel" : 1,
+					"centered" : false,
+					"offset" : [-3.75, -2.375],
+					"transformationGroups" : ["armback", "offset"],
+					"image" : "<armbackarmor>"
+				}
+			},
+			
+			"armfront" : {
+				"properties" : {
+					"zLevel" : 9,
+					"centered" : false,
+					"offset" : [-3.75, -2.375],
+					"transformationGroups" : ["armfront", "offset"],
+					"image" : "/humanoid/<species>/frontarm.png:<armfrontframe><armfrontdirectives>"
+				}
+			},
+			
+			"armfrontarmor" : {
+				"properties" : {
+					"zLevel" : 10,
+					"centered" : false,
+					"offset" : [-3.75, -2.375],
+					"transformationGroups" : ["armfront", "offset"],
+					"image" : "<armfrontarmor>"
+				}
+			},
+			
+			"mag" : {
+				"properties" : {
+					"zLevel" : 4,
+					"centered" : false,
+					"offset" : [0, 0],
+					"transformationGroups" : ["mag", "gun", "offset"],
+					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/mag.png"
+				}
+			},
+			
+			"bullet" : {
+				"properties" : {
+					"zLevel" : 3,
+					"centered" : false,
+					"offset" : [0, 0],
+					"transformationGroups" : ["bullet", "mag", "gun", "offset"],
+					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/bullet.png"
+				}
+			},
+			
+			"lever1" : {
+				"properties" : {
+					"zLevel" : 5,
+					"centered" : false,
+					"offset" : [0, 0],
+					"transformationGroups" : ["lever1", "gun", "offset"],
+					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/lever1.png"
+				}
+			},
+			
+			"lever2" : {
+				"properties" : {
+					"zLevel" : 7,
+					"centered" : false,
+					"offset" : [0, 0],
+					"transformationGroups" : ["lever2", "gun", "offset"],
+					"image" : "/items/gunsbound/sprite/guns/<bullettype>/<gunmodel>/lever2.png"
+				}
+			}
+		}
+	},
+	
+	"sounds" : {
+		"fire" : ["/sfx/gunsbound/9mmParabellum6.ogg"],
+		"dry" : ["/sfx/objects/hiddenswitch1.ogg"],
+		"reload" : ["/sfx/gunsbound/reloading.ogg"],
+		"reloadEnd" : ["/sfx/gunsbound/reloaded.ogg"]
+	},
+	
+	"lights" : {
+		"muzzleFlash" : {
+			"pointBeam" : 0,
+			"color" : [255, 255, 82],
+			"pointLight" : false,
+			"transformationGroups" : ["muzzle", "gun", "offset"],
+			"active" : false,
+			"position" : [0, 0],
+			"pointAngle" : 0
+		}
+	},
+	
+	"particleEmitters" : {
+		"case" : {
+			"transformationGroups" : ["case", "gun", "offset"],
+			"particles" : [
+					{
+					"particle" : {
+						"finalVelocity" : [-2, 50],
+						"angularVelocity" : 720,
+						"color" : [255, 255, 255, 255],
+						"size" : 0.30,
+						"destructionTime" : 0.075,
+						"image" : "/items/gunsbound/sprite/shells/empty9mmParabellum.png", //shells here
+						"destructionAction" : "fade",
+						"collidesForeground" : true,
+						"timeToLive" : 1,
+						"type" : "textured",
+						"layer" : "front",
+						"flippable" : true,
+						"initialVelocity" : [-19, 16],
+						"approach" : [0, -100],
+						"position" : [0, 0],
+						"fullbright" : false
+					}
+				}
+			],
+			"offsetRegion" : [1, 1, 1, 1],
+			"emissionRate" : 0.01
+		},
+		
+		"smoke" : {
+			"transformationGroups" : ["muzzle", "gun", "offset"],
+			"particles" : [
+				{
+					"particle" : {
+						"color" : [255, 255, 255, 64],
+						"size" : 0.0675,
+						"image" : "/items/gunsbound/sprite/particles/smoke.png",
+						"destructionAction" : "shrink",
+						"timeToLive" : 1,
+						"destructionTime" : 1,
+						"layer" : "front",
+						"finalVelocity" : [0, 0],
+						"type" : "textured",
+						"flippable" : true,
+						"angularVelocity" : 360,
+						"initialVelocity" : [0, 1],
+						"approach" : [0, -1],
+						"position" : [0, -0.5],
+						"fullbright" : false
+					}
+				}
+			],
+			"offsetRegion" : [1, 1, 1, 1],
+			"emissionRate" : 0.01
+		}
+	},
+	
+	"transformationGroups" : {
+		"offset" : {"interpolated" : true},
+		"gun" : {"interpolated" : true},
+		"gunbg" : {"interpolated" : true},
+		"mag" : {"interpolated" : true},
+		"bullet" : {"interpolated" : true},
+		"lever1" : {"interpolated" : true},
+		"lever2" : {"interpolated" : true},
+		"armback" : {"interpolated" : true},
+		"armfront" : {"interpolated" : true},
+		"case" : {"interpolated" : true},
+		"muzzle" : {"interpolated" : true}
+	}
+}

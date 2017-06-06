@@ -1,0 +1,91 @@
+{
+  "projectileName" : "12Gauge00Buckshot",
+  "image" : "12Gauge00BuckshotPellet.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "speed" : 30,
+  "power" : 5.0,
+  "damageKind" : "default",
+  "timeToLive" : 0.01,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "12Gauge00BuckshotPellet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 0.85,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 5
+    },
+    {
+      "action" : "projectile",
+      "type" : "12Gauge00BuckshotPellet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 0.9,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 5
+    },
+    {
+      "action" : "projectile",
+      "type" : "12Gauge00BuckshotPellet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 0.95,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 5
+    },
+    {
+      "action" : "projectile",
+      "type" : "12Gauge00BuckshotPellet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 1,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 5
+    },
+    {
+      "action" : "projectile",
+      "type" : "12Gauge00BuckshotPellet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 1.05,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 5
+    },
+    {
+      "action" : "projectile",
+      "type" : "12Gauge00BuckshotPellet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 1.1,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 5
+    },
+    {
+      "action" : "projectile",
+      "type" : "12Gauge00BuckshotPellet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 1.15,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 5
+    },
+    {
+      "action" : "projectile",
+      "type" : "12Gauge00BuckshotPellet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 1.1,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 5
+    },
+    {
+      "action" : "projectile",
+      "type" : "12Gauge00BuckshotPellet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 1.15,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 5
+    }
+  ]
+}
+
+

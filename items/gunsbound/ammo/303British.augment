@@ -1,0 +1,18 @@
+{
+	"itemName" : "303British",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/303British.png",
+	"description" : "",
+	"shortdescription" : ".303 British Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "303British", "303British" ],
+		"projectileConfig" 	: {"speed" : 95, "power" : 28},
+		"projectileType" 	: "bullet-2"
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

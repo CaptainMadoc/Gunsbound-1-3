@@ -1,0 +1,18 @@
+{
+	"itemName" : "762x25Tokarev",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/762x25Tokarev.png",
+	"description" : "",
+	"shortdescription" : "7.62x25mm Tokarev Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "762x25Tokarev", "762x25Tokarev" ],
+		"projectileConfig" 	: {"speed" : 80, "power" : 7},
+		"projectileType" 	: "bullet-2"
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

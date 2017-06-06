@@ -1,0 +1,11 @@
+{
+  "author" : "jMadoc",
+  "description" : "",
+  "friendlyName" : "GunsBound",
+  "link" : "",
+  "name" : "GunsBound",
+  "path" : ".",
+  "steamContentId" : "",
+  "includes": ["shieldBars"],
+  "version" : "2.0"
+}

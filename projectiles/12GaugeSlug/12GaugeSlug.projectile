@@ -1,0 +1,17 @@
+{
+  "projectileName" : "12GaugeSlug",
+  "image" : "12GaugeSlug.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "speed" : 200,
+  "power" : 30.0,
+  "damageKind" : "default"
+}

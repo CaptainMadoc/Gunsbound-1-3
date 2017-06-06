@@ -1,0 +1,209 @@
+{
+	"itemName" : "HKMP5A2",
+	"price" : 0,
+	"maxStack" : 1,
+	"rarity" : "common",
+	"category" : "Guns : 9mm Parabellum",
+	"description" : "",
+	"shortdescription" : "HK-MP5A2",
+	"tooltipKind" : "base",
+	"twoHanded" : true,
+	
+	"inventoryIcon" : "/items/gunsbound/sprite/guns/9mmParabellum/HKMP5A2/icon.png",
+	
+	"animation" : "gunsprite.animation",
+	"animationParts" : { },
+	"animationCustom" : { },
+	"animationKey" : {				//animationtracks etc
+		"key" : 1,
+		"tracks" : {
+			"shoot" : [
+				{
+					"value" : {"gun_rotation" : 0, "lever1_x" : 0, "offset_x" : -0.25},
+					"step" : 2,
+					"sound" : {}
+				},
+				{
+					"value" : {"gun_rotation" : 0, "lever1_x" : -0.25, "offset_x" : 0},
+					"step" : 6,
+					"sound" : {}
+				},
+				{
+					"value" : {"lever1_x" : 0, "bullet_y": 0.125},
+					"step" : 6,
+					"sound" : {}
+				}
+			],
+			"reload" : [
+				{
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25},
+					"step" : 10,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : -0.25, "armangle" : -5, "armback_x": 0.5, "armback_y": -0.125},
+					"step" : 1,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0},
+					"step" : 9,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0.125, "mag_x" : -1.5, "armback_x": -0.75},
+					"step" : 10,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" :  -0.5, "mag_x" : 0, "armback_x": 0.5},
+					"step" : 10,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0, "armangle" : 10, "armback_y": 0},
+					"step" : 10,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0, "armangle" : 0},
+					"step" : 5,
+					"sound" : {}
+				},
+				{
+					"value" : {},
+					"step" : 5,
+					"sound" : {}
+				},
+				{
+					"value" : {"armback_x" : 0.75, "armback_y" : 0.25, "armback_rotation" : 15},
+					"step" : 5,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0, "gun_rotation" : 15, "gun_y" : -0.75, "armangle" : -5},
+					"step" : 6,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "lever2_x" : -0.25, "gun_x" : -1.25, "armback_x" : 0.25},
+					"step" : 4,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0, "lever1_x" : 0, "lever2_x" : 0, "gun_x" : -1.25, "gun_rotation" : 0, "gun_y" : -0.625, "armangle" : 0, "armback_x" : 0.75, "bullet_y": 0.125},
+					"step" : 6,
+					"sound" : {}
+				},
+				{
+					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},
+					"step" : 5,
+					"sound" : {}
+				}
+			],
+			"load" : [
+				{
+					"value" : {},
+					"step" : 5,
+					"sound" : {}
+				},
+				{
+					"value" : {"armback_x" : 0.75, "armback_y" : 0.25, "armback_rotation" : 15, "bullet_y": 0.125},
+					"step" : 5,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0, "gun_rotation" : 15, "gun_y" : -0.75, "armangle" : -5},
+					"step" : 6,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0, "lever1_x" : -0.25, "lever2_x" : -0.25, "gun_x" : -1.25, "armback_x" : 0.25},
+					"step" : 4,
+					"sound" : {}
+				},
+				{
+					"value" : {"mag_y" : 0, "lever1_x" : 0, "lever2_x" : 0, "gun_x" : -1.25, "gun_rotation" : 0, "gun_y" : -0.625, "armangle" : 0, "armback_x" : 0.75},
+					"step" : 6,
+					"sound" : {}
+				},
+				{
+					"value" : {"armback_x" : 0.625,  "armback_y" : 0, "armback_rotation" : 5},
+					"step" : 5,
+					"sound" : {}
+				}
+			]
+		},
+		"fixed" : false,
+		"doneplaying" : "",
+		"step" : 30,
+		"currentstep" : 1
+	}, 
+	"parts" : {
+			"offset_x" : 0, 
+			"offset_y" : 0, 
+			"offset_rotation" : 0,
+			
+			"gun_x" : -1.25, 
+			"gun_y" : -0.75, 
+			"gun_xRot" : 1, 
+			"gun_yRot" : 0.5, 
+			"gun_rotation" : 0,
+			
+			"gunbg_x" : 0, 
+			"gunbg_y" : 0, 
+			"gunbg_rotation" : 0,
+			
+			"mag_x" : 0, 
+			"mag_y" : 0, 
+			"mag_rotation" : 0,
+			
+			"bullet_x" : 0, 
+			"bullet_y" : 0, 
+			"bullet_rotation" : 0,
+			
+			"lever1_x" : 0, 
+			"lever1_y" : 0, 
+			"lever1_rotation" : 0,
+			
+			"lever2_x" : 0, 
+			"lever2_y" : 0, 
+			"lever2_rotation" : 0,
+			
+			"armback_x" : 0.625,
+			"armback_y" : 0,
+			"armback_xRot" : -0.75,
+			"armback_yRot" : 0.125,
+			"armback_rotation" : 5,
+			
+			"armfront_x" : 0,
+			"armfront_y" : 0,
+			"armfront_xRot" : -1.25,
+			"armfront_yRot" : 0.125,
+			"armfront_rotation" : 0
+			}, //Parts from transformation group. add stuff if you wish to animate some
+	
+	//The higher, The more harder to control
+	"gunConfig" : {	
+		"inaccuracy" 		: 4, //Your random number generator
+		"compatibleAmmo" 	: ["9mmParabellum", "9mmParabellumExplosive" ],
+		"projectileConfig" 	: {"speed" : 125, "power" : 5},
+		"projectileType" 	: "bullet-2",
+		"smokeEffect" 		: true,
+		"shellEffect" 		: true,
+		"fireOffset" 		: [1.75, 0.375],			//the projectile pos
+		"shellOffset" 		: [0.5, -0.125], 		//the falling shell init pos
+		"fireSpeed" 		: 0.07,			//atataatatatatata
+		"gunSounds" 		: ["fire"], 		//Sounds from .animation
+		"fireMode" 			: "auto", 		//auto, burst, semi
+		"burstAmount" 		: 5,
+		"burstCooldown" 	: 0.8,
+		"recoilPower" 		: 12,			//The higher, The more harder to control
+		"recoilRecovery" 	: 8, 		//Higher the slower
+		"magazineMax" 		: 30,
+		"magazineCurrent"	: 0,
+		"reloadCooldown" 	: 2
+	},
+	
+	"scripts" : ["/items/gunsbound/main.lua"]
+}

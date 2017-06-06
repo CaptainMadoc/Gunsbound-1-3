@@ -1,0 +1,18 @@
+{
+	"itemName" : "12GaugeSlug",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/12GaugeSlug.png",
+	"description" : "",
+	"shortdescription" : "12 Gauge Slug Ammo",
+	
+	"gunConfig" : {
+		"compatibleAmmo" 	: [ "12GaugeSlug", "12Gauge" ],
+		"projectileType" 	: "12GaugeSlug",
+		"projectileConfig" : {"speed" : 120, "power" : 40, "piercing" : true}
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

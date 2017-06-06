@@ -1,0 +1,18 @@
+{
+	"itemName" : "792x33Kurz",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/792x33Kurz.png",
+	"description" : "",
+	"shortdescription" : "7.92x33 Kurz Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "792x33Kurz", "792x33Kurz" ],
+		"projectileType" 	: "bullet-2",
+		"projectileConfig" 	: {"speed" : 90, "power" : 18}
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

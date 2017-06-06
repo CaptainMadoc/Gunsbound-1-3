@@ -1,0 +1,18 @@
+{
+	"itemName" : "762x39mm",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/762x39mm.png",
+	"description" : "",
+	"shortdescription" : "7.62x39mm Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "762x39mm", "762x39mm" ],
+		"projectileType" 	: "bullet-2",
+		"projectileConfig" 	: {"speed" : 90, "power" : 20}
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

@@ -1,0 +1,18 @@
+{
+	"itemName" : "12GaugeBuckshot",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/12GaugeBuckshot.png",
+	"description" : "",
+	"shortdescription" : "12 Gauge 00 Buckshot Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "12GaugeBuckshot", "12Gauge" ],
+		"projectileType" 	: "12Gauge00Buckshot",
+		"projectileConfig" : {"speed" : 60}
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

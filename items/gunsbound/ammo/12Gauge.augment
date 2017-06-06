@@ -1,0 +1,33 @@
+{
+	"itemName" : "12Gauge",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/12Gauge.png",
+	"description" : "",
+	"shortdescription" : "12 Gauge Ammo",
+	
+	"gunConfig" : {	
+		"inaccuracy" 		: 5, //Your random number generator
+		"compatibleAmmo" 	: [ "12Gauge", "12Gauge" ],
+		"projectileConfig" 	: {"speed" : 75},
+		"projectileType" 	: "12Gauge00Buckshot",
+		"smokeEffect" 		: true,
+		"shellEffect" 		: true,
+		"fireOffset" 		: [3.15,0.30],			//the projectile pos
+		"shellOffset" 		: [1,0.45], 		//the falling shell init pos
+		"fireSpeed" 		: 0.23,			//atataatatatatata
+		"gunSounds" 		: ["fire"], 		//Sounds from .animation
+		"fireMode" 			: "auto", 		//auto, burst, semi
+		"burstAmount" 		: 5,
+		"burstCooldown" 	: 0.8,
+		"recoilPower" 		: 1,			//The higher, The more harder to control
+		"recoilRecovery" 	: 1, 		//Higher the slower
+		"magazineMax" 		: 20,
+		"magazineCurrent"	: 0,
+		"reloadCooldown" 	: 3
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

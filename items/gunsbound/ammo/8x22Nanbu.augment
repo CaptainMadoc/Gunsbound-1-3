@@ -1,0 +1,18 @@
+{
+	"itemName" : "8x22Nanbu",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/8x22Nanbu.png",
+	"description" : "",
+	"shortdescription" : "8x22 Nanbu Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "8x22Nanbu" , "8x22Nanbu" ],
+		"projectileConfig" 	: {"speed" : 65, "power" : 3},
+		"projectileType" 	: "bullet-2"
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

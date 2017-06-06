@@ -1,0 +1,18 @@
+{
+	"itemName" : "30-06",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/30-06.png",
+	"description" : "",
+	"shortdescription" : "30-06 Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "30-06", "30-06" ],
+		"projectileConfig" 	: {"speed" : 90, "power" : 30},
+		"projectileType" 	: "bullet-2"
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

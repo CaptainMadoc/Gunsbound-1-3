@@ -1,0 +1,18 @@
+{
+	"itemName" : "763x25Mauser",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/763x25Mauser.png",
+	"description" : "",
+	"shortdescription" : "7.63x25 Mauser Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "763x25Mauser", "763x25Mauser" ],
+		"projectileType" 	: "bullet-2",
+		"projectileConfig" 	: {"speed" : 60, "power" : 8}
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

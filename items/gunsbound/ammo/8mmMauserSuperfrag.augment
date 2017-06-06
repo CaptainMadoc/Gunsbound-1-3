@@ -1,0 +1,23 @@
+{
+	"itemName" : "8mmMauserSuperfrag",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/8mmMauser.png",
+	"description" : "WARNING: Permanently Destroys Potential Booty",
+	"shortdescription" : "8mm Mauser Superfrag Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: ["8mmMauserSuperfrag" , "8mmMauser" ],
+		"projectileConfig" 	: {"speed" : 200, "power" : 100, "actionOnReap" : [
+			{
+				"action" : "config",
+				"file" : "/projectiles/explosions/bombblockexplosion/bombblockexplosion.config"
+			}
+		]},
+		"projectileType" 	: "bullet-4"
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}

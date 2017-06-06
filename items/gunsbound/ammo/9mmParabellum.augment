@@ -1,0 +1,18 @@
+{
+	"itemName" : "9mmParabellum",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 10000,
+	"inventoryIcon" : "/items/gunsbound/sprite/shells/9mmParabellum.png",
+	"description" : "",
+	"shortdescription" : "9mm Parabellum Ammo",
+	
+	"gunConfig" : {	
+		"compatibleAmmo" 	: [ "9mmParabellum" , "9mmParabellum" ],
+		"projectileConfig" 	: {"speed" : 75, "power" : 5},
+		"projectileType" 	: "bullet-2"
+	},
+	
+	"scripts" : [ "ammo.lua" ]
+}
