@@ -278,6 +278,10 @@ function getDirectives(p, pic)
 end
 
 function getDirectory(p, pic)
-	local splited = split(p[pic].image, ":")
-	return splited[1]
+	if p[pic] then
+		local splited = split(p[pic].image, ":")
+		return splited[1]
+	else
+		return nil
+	end
 end
