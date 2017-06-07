@@ -231,12 +231,22 @@ function updateDrawable() --drawables/transform apply
 
 	animator.setGlobalTag("armbackdirectives", armInfo.skindirectives)
 	animator.setGlobalTag("armback", armInfo.backarm)
-	animator.setGlobalTag("armbackarmor", armInfo.backarmarmor..":"..armInfo.backarm..armInfo.backarmarmordirectives)
-
+	
+	if armInfo.backarmarmor then
+		animator.setGlobalTag("armbackarmor", armInfo.backarmarmor..":"..armInfo.backarm..armInfo.backarmarmordirectives)
+	else
+		animator.setGlobalTag("armbackarmor", "")
+	end
+	
+	
 	animator.setGlobalTag("armfrontdirectives", armInfo.skindirectives)
 	animator.setGlobalTag("armfront", armInfo.frontarm)
-	animator.setGlobalTag("armfrontarmor", armInfo.frontarmarmor..":"..armInfo.frontarm..armInfo.frontarmarmordirectives)
 	
+	if armInfo.frontarmarmor then
+		animator.setGlobalTag("armfrontarmor", armInfo.frontarmarmor..":"..armInfo.frontarm..armInfo.frontarmarmordirectives)
+	else
+		animator.setGlobalTag("armfrontarmor", "")
+	end
 	
 	for i,v in pairs(transform) do
 		--Resets so it doesnt break
